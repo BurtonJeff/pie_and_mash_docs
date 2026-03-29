@@ -11,9 +11,12 @@ Static HTML documentation site for the **Pie & Mash** mobile app — a community
 ```
 PML_DOCS/
 └── docs/
-    ├── privacy-policy.html   # App privacy policy (last updated 14 March 2026)
-    └── support.html          # Support page with FAQ (expandable accordion via vanilla JS)
+    ├── CNAME                        # Custom domain config (pml.org.uk)
+    ├── privacy-policy/index.html    # App privacy policy (last updated 14 March 2026)
+    └── support/index.html           # Support page with FAQ (expandable accordion via vanilla JS)
 ```
+
+Each page lives in its own directory as `index.html` so GitHub Pages serves clean URLs (e.g. `pml.org.uk/privacy-policy/` instead of `pml.org.uk/privacy-policy.html`). Use absolute paths like `/privacy-policy/` for cross-page links.
 
 ## Hosting & Deployment
 
