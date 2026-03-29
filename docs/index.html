@@ -44,26 +44,57 @@
     .hero .tagline {
       font-size: 17px;
       color: #d4e4c8;
-      margin-bottom: 24px;
+      margin-bottom: 0;
     }
-    .store-badges {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
+
+    /* Download */
+    .download {
+      padding: 32px 0 48px;
     }
-    .store-badge {
-      display: inline-block;
-      background: #fff;
+    .download h2 {
       color: #2D5016;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 15px;
-      padding: 12px 28px;
-      border-radius: 8px;
-      transition: opacity 0.2s;
+      font-size: 22px;
+      margin-bottom: 24px;
+      text-align: center;
     }
-    .store-badge:hover { opacity: 0.9; }
+    .download-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .download-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px 24px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      text-align: center;
+      text-decoration: none;
+      transition: box-shadow 0.2s;
+    }
+    .download-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .download-card .store-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2D5016;
+      margin-bottom: 6px;
+    }
+    .download-card .qr-code {
+      width: 160px;
+      height: 160px;
+      margin: 16px 0 12px;
+    }
+    .download-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+    .download-card .coming-soon {
+      margin-top: 8px;
+      font-style: italic;
+      color: #999;
+    }
 
     /* Content */
     .container {
@@ -174,8 +205,8 @@
       .hero h1 { font-size: 26px; }
       .hero .tagline { font-size: 15px; }
       .hero-logo { order: -1; }
-      .store-badges { justify-content: center; }
       .feature-grid { grid-template-columns: 1fr; }
+      .download-grid { grid-template-columns: 1fr; }
       .screenshot-row img { width: 160px; }
       .story { padding: 24px; }
     }
@@ -188,10 +219,6 @@
       <div class="hero-text">
         <h1>Pie &amp; Mash</h1>
         <p class="tagline">Preserving a Great British Tradition, One Visit at a Time</p>
-        <div class="store-badges">
-          <a href="#" class="store-badge">Download on the App Store</a>
-          <a href="#" class="store-badge">Get it on Google Play</a>
-        </div>
       </div>
       <img src="/images/logo.png" alt="Pie &amp; Mash logo" class="hero-logo">
     </div>
@@ -235,6 +262,22 @@
           <h3>Take on Challenges</h3>
           <p>Complete global challenges from the team or group challenges set by your mates.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <h2>Get the App</h2>
+      <div class="download-grid">
+        <a href="https://apps.apple.com/app/id6760226036" class="download-card">
+          <div class="store-name">App Store</div>
+          <img src="/images/appstore-qr.png" alt="Scan to download from the App Store" class="qr-code">
+          <p>Download for iPhone</p>
+        </a>
+        <a href="#" class="download-card">
+          <div class="store-name">Google Play</div>
+          <p>Download for Android</p>
+          <p class="coming-soon">Coming soon</p>
+        </a>
       </div>
     </section>
 
