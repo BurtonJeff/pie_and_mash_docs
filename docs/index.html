@@ -17,14 +17,24 @@
     .hero {
       background: #2D5016;
       color: #fff;
-      text-align: center;
-      padding: 60px 20px 48px;
+      padding: 36px 20px;
+    }
+    .hero-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .hero-text {
+      flex: 1;
     }
     .hero-logo {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 24px;
-      margin-bottom: 24px;
+      flex-shrink: 0;
     }
     .hero h1 {
       font-size: 32px;
@@ -34,10 +44,7 @@
     .hero .tagline {
       font-size: 17px;
       color: #d4e4c8;
-      margin-bottom: 32px;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 24px;
     }
     .store-badges {
       display: flex;
@@ -162,9 +169,12 @@
 
     /* Responsive */
     @media (max-width: 600px) {
-      .hero { padding: 40px 20px 36px; }
+      .hero { padding: 28px 20px; }
+      .hero-inner { flex-direction: column; text-align: center; }
       .hero h1 { font-size: 26px; }
       .hero .tagline { font-size: 15px; }
+      .hero-logo { order: -1; }
+      .store-badges { justify-content: center; }
       .feature-grid { grid-template-columns: 1fr; }
       .screenshot-row img { width: 160px; }
       .story { padding: 24px; }
@@ -174,12 +184,16 @@
 <body>
 
   <section class="hero">
-    <img src="/images/logo.png" alt="Pie &amp; Mash logo" class="hero-logo">
-    <h1>Pie &amp; Mash</h1>
-    <p class="tagline">Preserving a Great British Tradition, One Visit at a Time</p>
-    <div class="store-badges">
-      <a href="#" class="store-badge">Download on the App Store</a>
-      <a href="#" class="store-badge">Get it on Google Play</a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Pie &amp; Mash</h1>
+        <p class="tagline">Preserving a Great British Tradition, One Visit at a Time</p>
+        <div class="store-badges">
+          <a href="#" class="store-badge">Download on the App Store</a>
+          <a href="#" class="store-badge">Get it on Google Play</a>
+        </div>
+      </div>
+      <img src="/images/logo.png" alt="Pie &amp; Mash logo" class="hero-logo">
     </div>
   </section>
 
