@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pie &amp; Mash — Support</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f0ede8;
+      color: #333;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      color: #2D5016;
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #2D5016;
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    a { color: #2D5016; }
+    .contact-box {
+      background: #f7f5f0;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .contact-box p { margin-bottom: 8px; }
+    .contact-box p:last-child { margin-bottom: 0; }
+    .faq-item {
+      border-bottom: 1px solid #e8e5e0;
+      padding: 16px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2D5016;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 400;
+      color: #999;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-question::after {
+      content: '\2212';
+    }
+    .faq-answer {
+      font-size: 15px;
+      color: #444;
+      margin-top: 10px;
+      display: none;
+      white-space: pre-line;
+    }
+    .faq-item.open .faq-answer { display: block; }
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #e0ddd8;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Support</h1>
+    <p class="subtitle">Pie &amp; Mash &mdash; Help &amp; FAQ</p>
+
+    <p>Pie &amp; Mash is the app for discovering and checking in to traditional British pie &amp; mash shops across the UK. Track your visits, earn badges, climb the leaderboard, and connect with fellow pie &amp; mash fans.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p>Use the Feedback form on the Home screen &mdash; our team reviews all feedback daily.</p>
+    </div>
+
+    <h2>Report a Bug</h2>
+    <p>If something isn&rsquo;t working as expected, please let us know via the in-app Feedback form. Include a brief description of what happened and what you expected to happen &mdash; this helps us fix things quickly.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">How does checking in work?</div>
+      <div class="faq-answer">You need to be within 200 metres of a shop to check in. The app uses your GPS location to verify this. You can only check in to the same shop once per day.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How are points calculated?</div>
+      <div class="faq-answer">Your first ever visit to a shop earns 35 points — a 10-point base plus a 25-point first-visit bonus. Every return visit to that same shop on a different day earns 10 points.
+
+Visiting the 'shop of the week' earns you a 25 point bonus.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What are badges?</div>
+      <div class="faq-answer">Badges are awarded automatically when you reach certain milestones, such as visiting your first shop, checking in at 5 different shops, or logging 10 total visits.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is Shop of the Week?</div>
+      <div class="faq-answer">Each week the Pie &amp; Mash team highlights a featured shop on the home screen — a great way to discover somewhere new.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I check in to the same shop more than once?</div>
+      <div class="faq-answer">Yes, but only once per day. You can visit as many different shops as you like on the same day and check in to each one.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is a 'Meatup'?</div>
+      <div class="faq-answer">Fancy meeting up with some other users in a group to share some pie, mash, liquor and banter? You can either create a meet-up (Meatup) for any group you are a member of or say you are going to the meet-up by using the 'Join' button.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What are groups?</div>
+      <div class="faq-answer">Groups let you connect with friends and fellow pie &amp; mash fans. Create a group, share your invite code, and chat with members in the Community tab.
+
+To join a group open the Community tab and tap "Join Group". Enter the invite code shared by your group admin.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Does the app include reviews?</div>
+      <div class="faq-answer">No we don't. Everyone has a preference and everyone has a view on what's good and what's not so good. There are many social forums where this can be discussed and we feel the best place for reviews is there. In the app we just agree we all just love pie and mash.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the leaderboard?</div>
+      <div class="faq-answer">The Community tab shows an all-time leaderboard and a weekly leaderboard ranked by points. Keep visiting shops to climb the ranks!</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I get in touch?</div>
+      <div class="faq-answer">There is a feedback form on the home screen. Our admin team review all feedback daily. If you see something wrong, have an idea about a new feature you would like to see, find a broken link in the app, just let us know.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the origin of the Pie and Mash app?</div>
+      <div class="faq-answer">Two brothers, let's call them Jeff and Dave, meet up and go for Pie &amp; Mash whenever the one of them that lives abroad flies into London. They walk into Manzes Tower Bridge Road and randomly sit down with a bloke, let's call him Norman, who loves Pie and Mash so much he's been to every shop in the UK and written a book about it. After a lovely lunch and great chat the idea for the app is born.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I get my shop added or updated?</div>
+      <div class="faq-answer">If the details we have of your shop need updating just send us details on the feedback form and we will get it sorted. Alternatively after verification we can give you access through the app to maintain your shop's details.
+
+If your shop is missing do the same. The criteria is simple, it must serve traditional Pie and Mash as its main business and have a sit down facility.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I own a shop, can I update details for it myself?</div>
+      <div class="faq-answer">Yes you can. Contact us through the feedback option on the home page with some contact details. We need to verify you first but we can then set it up so you can update your shop details using the app.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the difference between Global Challenges and Group Challenges?</div>
+      <div class="faq-answer">Global Challenges are created by the Pie &amp; Mash team and are available to all users. Completing a global challenge earns you a badge and is a great way to discover more shops. Group Challenges are created by group admins and are only visible to members of that group — perfect for a bit of friendly competition within your pie-loving circle!</div>
+    </div>
+
+    <h2>Account Management</h2>
+    <p><strong>Delete your account:</strong> Go to Settings in the app and tap "Delete Account". This permanently removes your profile and all associated data.</p>
+    <p><strong>Reset your password:</strong> Tap "Forgot Password" on the sign-in screen and follow the instructions sent to your email.</p>
+
+    <div class="footer">
+      <p><a href="/privacy-policy/">Privacy Policy</a></p>
+      <p>&copy; 2026 Pie &amp; Mash. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+      q.addEventListener('click', function() {
+        this.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
